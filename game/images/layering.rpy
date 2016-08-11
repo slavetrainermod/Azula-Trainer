@@ -29,8 +29,17 @@ screen cg_screen:
 
 
 
-
 init python: ###Method Definition for controlling transitions and outfits
+    def azula_sprite(input, input2):
+        return LiveComposite(
+        (0, 290),
+        (0,0), azula_sprite_base,
+        (0,0), azula_eye,
+        (0,0), azula_eyebrow,
+        (0,0), azula_mouth), .1
+
+
+
     def background(image=None):
         global back_image
         ###HIDE OLD SCREEN
@@ -72,28 +81,57 @@ init python: ###Method Definition for controlling transitions and outfits
         renpy.with_statement(Dissolve(0.5))
 
     def changeAzula(emotion):
-        global cg_image_base
-        global cg_image_1
-        global cg_image_2
-        global cg_image_3
-        global cg_image_4
-        global cg_image_5
-        global cg_image_6
+        global azula_sprite_base
+        global azula_eye
+        global azula_mouth
+        global azula_eyebrow
 
-        ###HIDE OLD SCREEN
-        renpy.hide_screen("cg_screen")
-        #renpy.with_statement(Dissolve(0.5))
+        ap = "images/cg/azula/"
 
-
-
-
-
-
-
-
-        ###DISPLAY THE UPDATED SCREEEN
-        renpy.show_screen("cg_screen")
-        renpy.with_statement(Dissolve(0.5))
+        if emotion == "disappointed":
+            azula_eye = ap+"default_eye_1.png"
+            azula_eyebrow = ap+"tense_eyebrow.png"
+            azula_mouth = ap+"default_mouth_3.png"
+        elif emotion == "bemused":
+            azula_eye = ap+"default_eye_1.png"
+            azula_eyebrow = ap+"little_up_little_downbrow.png"
+            azula_mouth = ap+"default_mouth_1.png"
+        elif emotion == "content":
+            azula_eye = ap+"default_eye_1.png"
+            azula_eyebrow = ap+"content_eyebrow_1.png"
+            azula_mouth = ap+"default_mouth_2.png"
+        elif emotion == "excited":
+            azula_eye = ap+"default_eye_1.png"
+            azula_eyebrow = ap+"excited_eyebrow.png"
+            azula_mouth = ap+"smiling_mouth.png"
+        elif emotion == "stern":
+            azula_eye = ap+"default_eye_1.png"
+            azula_eyebrow = ap+"mad_eyebrow.png"
+            azula_mouth = ap+"default_mouth_1.png"
+        elif emotion == "neutral":
+            azula_eye = ap+"default_eye_1.png"
+            azula_eyebrow = ap+"content_eyebrow_2.png"
+            azula_mouth = ap+"default_mouth_1.png"
+        elif emotion == "frustrated":
+            azula_eye = ap+"default_eye_1.png"
+            azula_eyebrow = ap+"bored_eyebrow.png"
+            azula_mouth = ap+"mad_mouth.png"
+        elif emotion == "happy":
+            azula_eye = ap+"default_eye_1.png"
+            azula_eyebrow = ap+"content_eyebrow_1.png"
+            azula_mouth = ap+"smiling_mouth.png"
+        elif emotion == "surprised":
+            azula_eye = ap+"eye_open_1.png"
+            azula_eyebrow = ap+"excited_eyebrow.png"
+            azula_mouth = ap+"talking_mouth_1.png"
+        elif emotion == "annoyed":
+            azula_eye = ap+"partial_eye_1.png"
+            azula_eyebrow = ap+"mad_eyebrow.png"
+            azula_mouth = ap+"default_mouth_1.png"
+        elif emotion == "mad":
+            azula_eye = ap+"partial_eye_1.png"
+            azula_eyebrow = ap+"mad_eyebrow.png"
+            azula_mouth = ap+"mad_mouth.png"
         
         
 
