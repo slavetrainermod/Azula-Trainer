@@ -16,6 +16,7 @@ label start_variables: ###Define Starting variables
     $ cg_image_4 = "images/blank.png"
     $ cg_image_5 = "images/blank.png"
     $ cg_image_6 = "images/blank.png"
+    $ cg_scene = "FireThrone"
 
 
     $ azula_sprite_base = "images/cg/azula/base.png"

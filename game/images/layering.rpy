@@ -23,6 +23,11 @@ screen q_stats:
 screen cg_screen:
     add cg_image_base
     add cg_image_1
+    add cg_image_2
+    add cg_image_3
+    add cg_image_4
+    add cg_image_5
+    add cg_image_6
 
 
     zorder -1
@@ -52,12 +57,12 @@ init python: ###Method Definition for controlling transitions and outfits
         renpy.with_statement(Dissolve(0.5))
         
         
-    def cg(emotion, effect_1=None,
-                    effect_2=None,
-                    effect_3=None,
-                    effect_4=None,
-                    effect_5=None,
-                    effect_6=None,):
+    def cg( effect_1=None,
+            effect_2=None,
+            effect_3=None,
+            effect_4=None,
+            effect_5=None,
+            effect_6=None,):
         global cg_image_base
         global cg_image_1
         global cg_image_2
@@ -65,10 +70,27 @@ init python: ###Method Definition for controlling transitions and outfits
         global cg_image_4
         global cg_image_5
         global cg_image_6
+        global cg_scene
 
         ###HIDE OLD SCREEN
         renpy.hide_screen("cg_screen")
         #renpy.with_statement(Dissolve(0.5))
+        fp = "images/cg/scene_01/"+cg_scene+"/"
+
+        cg_image_base = fp+"base.png"
+
+        if effect_1 != None:
+            cg_image_1 = fp+effect_1+".png"
+        if effect_2 != None:
+            cg_image_2 = fp+effect_2+".png"
+        if effect_3 != None:
+            cg_image_3 = fp+effect_3+".png"
+        if effect_4 != None:
+            cg_image_4 = fp+effect_4+".png"
+        if effect_5 != None:
+            cg_image_5 = fp+effect_5+".png"
+        if effect_6 != None:
+            cg_image_6 = fp+effect_6+".png"
 
 
 
@@ -132,30 +154,3 @@ init python: ###Method Definition for controlling transitions and outfits
             azula_eye = ap+"partial_eye_1.png"
             azula_eyebrow = ap+"mad_eyebrow.png"
             azula_mouth = ap+"mad_mouth.png"
-        
-        
-
-    #disappointed: "tense_eyebrow", "defaultmouth_#3"
-    #bemused: "little_up_little_downbrow", "default_mouth_#1"
-    #content: "defaultmouth_#2", "contentbrow_#1"
-    #excited: "smilingmouth", "excitedbrow"
-    #stern: "defaultmouth", "mad_copy"
-    #neutral: "content_copy_2", "default_mouth"
-    #frustrated: "mad_mouth", "bored_copy"
-    #happy: "smiling_copy", "content_copy"
-    
-    #surprised: "eye_open" (pupil 1), "excitedbrow", "talkingmouth"
-    #annoyed: "eye_partially_closed" (pupil 1), "mad_brow", "defaultmouth_#1"
-    #mad: "eye_partially_closed" (pupil 1), "mad_mouth", "madbrow_copy"
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        

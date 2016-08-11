@@ -1,4 +1,5 @@
 ﻿label intro_scene:
+    $ background("images/environments/throne.png")
     "Four months have passed since you were assigned the post of personal military liaison to Fire Lord Azula, who has spent three of the last four years isolated in her palace, ruling from afar."
     "You can only imagine how furious she was when the Phoenix King Ozai then demanded that she at least pass orders through a living person, rather than by a messenger hawk."
     "All of your predecessors were killed or banished, but you have managed to survive, though you're not sure if it's due to your wits, her attraction to you, or just luck."
@@ -12,13 +13,14 @@
 
 
 label scene_01:
-    #FireThrone.psd, "mouth_closed", "angry", "eyes_at_player", "foreground_flames"
+    $ cg_scene = "FireThrone"
+    $ cg("mouth_closed", "angry", "eyes_at_player", "foreground_flames")
     $ changeAzula("neutral")
     a "Good morning, [pc_name]."
     pc "And to you, Fire Lord Azula."
     #$ changeLee("")
     "Heat washes over you as the flames between the two of you flare up."
-    $ cg("mouth_way_open", "super_turbo_mad", "angry_flames") #in addition to "foreground_flames"
+    $ cg("mouth_way_open", "super_turbo_mad", "angry_flames", "foreground_flames") #in addition to "foreground_flames"
     $ changeAzula("mad")
     a "I told you to stop addressing  me so formally!"
     pc "Forgive me, Azula. It's difficult to change after so many years of respecting authority."
@@ -33,7 +35,7 @@ label scene_01:
     $ cg("angry")
     $ changeAzula("content")
     a "Burn victims aren't particularly attractive."
-    $ cg("you_sure", "eyes_to_side")
+    $ cg("you_sure", "eyes_to_side", "mouth_open")
     "You clench your fist in anger. As a veteran, you've seen your fair share of burn victims. Most of them weren't lucky enough to only suffer a superficial wound. Even if they were your enemies, it's not a fate to make light of. She has no right to speak this way."
     pc "With all your experience on the front lines, naturally you would know."
     #$ changeLee("")
@@ -88,7 +90,9 @@ label scene_01:
     a "I assure you, I'm quite ready this time."
     pc "No, it's a new challenge. Your hands will be bound behind your back today."
     #$ changeLee("")
-    "Azula turns towards the wall and looks sidelong at you, intrigued." #Trainer.psd, "Norope", "ArmsNormal", "Eye1"
+    $ cg_scene = "Trainer"
+    $ cg("Norope", "ArmsNormal", "Eye1")
+    "Azula turns towards the wall and looks sidelong at you, intrigued."
     $ changeAzula("frustrated")
     a "Why would I ever agree to that?"
     menu:
@@ -158,6 +162,8 @@ label scene_01:
     #$ changeLee("")
     "You push Azula forward. With a low growl of annoyance, she begins to walk as directed." #black screen
     
+    $ cg_scene = "t8"
+    $ cg("a1", "d1", "st", "eplay")
     "Once you reach her bed chamber, you undress and lie down. Azula kneels between your legs." #T8.psd, "a1", "d1", "st", "eplay"
     $ changeAzula("bemused")
     a "Well?"
