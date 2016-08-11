@@ -17,11 +17,11 @@ init -1 python hide:
     ## This controls the title of the window, when Ren'Py is
     ## running in a window.
 
-    config.window_title = u"Azula Trainer"
+    config.window_title = u"Villain Trainer"
 
     # These control the name and version of the game, that are reported
     # with tracebacks and other debugging logs.
-    config.name = "Azula Trainer"
+    config.name = "Villain Trainer"
     config.version = "0.1"
 
     #########################################
@@ -139,7 +139,7 @@ init -1 python hide:
 
     ## The file containing the default font.
 
-    # style.default.font = "DejaVuSans.ttf"
+    style.default.font = "Herculanum.ttf"
 
     ## The default size of text.
 
@@ -256,7 +256,7 @@ init -1 python hide:
     ## stored. (It needs to be set early, before any other init code
     ## is run, so the persistent information can be found by the init code.)
 python early:
-    config.save_directory = "Azula Trainer-1470288723"
+    config.save_directory = "Villain Trainer-1470288723"
 
 init -1 python hide:
     #########################################
