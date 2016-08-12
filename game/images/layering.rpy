@@ -32,6 +32,8 @@ screen cg_screen:
 
     zorder -1
 
+screen black:   
+    add "images/black.png"
 
 
 init python: ###Method Definition for controlling transitions and outfits
@@ -55,6 +57,14 @@ init python: ###Method Definition for controlling transitions and outfits
         ###DISPLAY THE UPDATED SCREEEN
         renpy.show_screen("background")
         renpy.with_statement(Dissolve(0.5))
+
+    def black(image=None):
+        if image == "hide":
+            renpy.hide_screen("black")
+            renpy.with_statement(Dissolve(0.5))
+        if image == "show":
+            renpy.show_screen("black")
+            renpy.with_statement(Dissolve(0.5))
         
         
     def cg( effect_1=None,

@@ -14,7 +14,7 @@
 
 label scene_01:
     $ cg_scene = "FireThrone"
-    $ cg("mouth_closed", "angry", "eyes_at_player", "foreground_flames")
+    $ cg("mouth_closed", "angry", "eyes_at_player", "foreground_flames", "flags")
     $ changeAzula("neutral")
     a "Good morning, [pc_name]."
     pc "And to you, Fire Lord Azula."
@@ -26,12 +26,12 @@ label scene_01:
     pc "Forgive me, Azula. It's difficult to change after so many years of respecting authority."
     #$ changeLee("")
     $ changeAzula("neutral")
-    $ cg("mouth_open", "confused", "eyes_at_player")
+    $ cg("mouth_open", "confused", "eyes_at_player", "angry_flames")
     a "There's nothing to forgive."
     $ cg("mouth_closed") #remove "angry_flames"
     "As the flames return to their normal size, you breathe a quiet sigh of relief."
     $ changeAzula("stern")
-    $ cg("angry")
+    $ cg("angry", "confused", "eyes_at_player", "blank")
     a "However, should I need to remind you again, I'm afraid I might need to banish you for ugliness in addition to stupidity."
     $ changeAzula("content")
     $ cg("you_sure", "eyes_to_side", "mouth_open")
@@ -80,6 +80,7 @@ label scene_01:
             $ cg("angry", "eyes_at_player")
             a "Enough of haiku."
             "Azula leaps from her pillow and through the flames, quickly walking past you as she orders you to follow her." #screen cuts to black
+            $ black("show")
             $ changeAzula("excited")
             a "Come, boy."
 
@@ -92,6 +93,7 @@ label scene_01:
     #$ changeLee("")
     $ cg_scene = "Trainer"
     $ cg("Norope", "Norope", "Eye1", "blank", "blank", "blank")
+    $ black("hide")
     "Azula turns towards the wall and looks sidelong at you, intrigued."
     $ changeAzula("frustrated")
     a "Why would I ever agree to that?"
@@ -117,7 +119,7 @@ label scene_01:
             $ changeAzula("content")
             a "Most people aren't talented enough at firebending to be able, but I'm very good at breathing fire."
     
-    $ cg("arm_tied", "arm_tied")
+    $ cg("arm_tied", "arm_tied", "eye1", "dude")
     "Azula places her arms behind her back and nods her head at you, so you immediately begin to tie her hands."
     $ changeAzula("stern")
     a "You had better be right that tying my hands will be worth it."
@@ -140,7 +142,7 @@ label scene_01:
     a "That's better...somewhat..."
     "You give the rope another hard tug, but Azula doesn't lose her balance in the slightest. She just glares at you."
     $ changeAzula("mad")
-    $ cg("Norope", "Norope")
+    $ cg("arm_tied", "arm_tied")
     a "Fine, it's perfectly tight."
     $ changeAzula("neutral")
     a "Let's move on, so I can see whether or not this charade is worth my-"
@@ -160,10 +162,12 @@ label scene_01:
     a "Time is the word that I was looking for."
     pc "Speaking of time..."
     #$ changeLee("")
+    $ black("show")
     "You push Azula forward. With a low growl of annoyance, she begins to walk as directed." #black screen
     
     $ cg_scene = "t8"
     $ cg("a1", "blank", "blank", "blank")
+    $ black("hide")
     "Once you reach her bed chamber, you undress and lie down. Azula kneels between your legs." #T8.psd, "a1", "d1", "st", "eplay"
     $ changeAzula("bemused")
     a "Well?"
@@ -466,7 +470,7 @@ label scene_01:
             #$ changeLee("")
             $ cg("a86")
             "Azula immediately pulls off your cock. Instead of moving out of the way, she keeps her mouth open as you spray her with cum."
-            $ cg("a87") #remove "blur", "spidjr"
+            $ cg("a87", "jizz") #remove "blur", "spidjr"
             "As your seed splashes across her face, she closes her eyes, but opens them again when she realizes none of it hit her eyes."
             $ changeAzula("content")
             $ cg("a88")
@@ -484,7 +488,7 @@ label scene_01:
             $ cg("a92") #remove "mcumlipsc"
             "Before continuing, Azula licks the cum off her lips."
             $ changeAzula("excited")
-            $ cg("93")
+            $ cg("a93")
             a "So, how was that?"
             pc "A good ending to a great blowjob."
             #$ changeLee("")
@@ -549,6 +553,7 @@ label scene_01:
     $ cg("a101")
     a "Yes, [pc_name]."
     "Azula stands up and turns around." #fade to black
+    $ black("show")
     $ changeAzula("content")
     a "Now, untie me."
     $ changeAzula("bemused")
