@@ -11,8 +11,8 @@ init -1 python hide:
 
     ## These control the width and height of the screen.
 
-    config.screen_width = 1280
-    config.screen_height = 720
+    config.screen_width = 1920
+    config.screen_height = 1080
 
     ## This controls the title of the window, when Ren'Py is
     ## running in a window.
@@ -111,7 +111,9 @@ init -1 python hide:
     ## This is the minimum height of the window, including the margins
     ## and padding.
 
-    # style.window.yminimum = 250
+    style.window.yminimum = 250
+
+    style.menu_choice.size = 35
 
 
     #########################################
@@ -143,7 +145,7 @@ init -1 python hide:
 
     ## The default size of text.
 
-    # style.default.size = 22
+    style.default.size = 30
 
     ## Note that these only change the size of some of the text. Other
     ## buttons have their own styles.
@@ -326,12 +328,12 @@ init python:
     ## The name that's used for directories and archive files. For example, if
     ## this is 'mygame-1.0', the windows distribution will be in the
     ## directory 'mygame-1.0-win', in the 'mygame-1.0-win.zip' file.
-    build.directory_name = "Azula-Trainer-1.0"
+    build.directory_name = "Villain-Trainer-Demo"
 
     ## The name that's uses for executables - the program that users will run
     ## to start the game. For example, if this is 'mygame', then on Windows,
     ## users can click 'mygame.exe' to start the game.
-    build.executable_name = "Azula-Trainer"
+    build.executable_name = "Villain-Trainer"
 
     ## If True, Ren'Py will include update information into packages. This
     ## allows the updater to run.

@@ -39,7 +39,7 @@ screen black:
 init python: ###Method Definition for controlling transitions and outfits
     def azula_sprite(input, input2):
         return LiveComposite(
-        (0, 290),
+        (0, 339),
         (0,0), azula_sprite_base,
         (0,0), azula_eye,
         (0,0), azula_eyebrow,

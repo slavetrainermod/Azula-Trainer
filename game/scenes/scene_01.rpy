@@ -14,12 +14,12 @@
 
 label scene_01:
     $ cg_scene = "FireThrone"
-    $ cg("mouth_closed", "angry", "eyes_at_player", "foreground_flames", "flags")
+    $ cg("mouth_closed", "angry", "eyes_at_player", "foreground_flames")
     $ changeAzula("neutral")
     a "Good morning, [pc_name]."
     pc "And to you, Fire Lord Azula."
     #$ changeLee("")
-    $ cg("mouth_way_open", "super_turbo_mad", "angry_flames", "foreground_flames") #in addition to "foreground_flames"
+    $ cg("mouth_way_open", "super_turbo_mad", "eyes_at_player", "angry_flames", "foreground_flames") #in addition to "foreground_flames"
     "Heat washes over you as the flames between the two of you flare up."
     $ changeAzula("mad")
     a "I told you to stop addressing  me so formally!"
@@ -31,7 +31,7 @@ label scene_01:
     $ cg("mouth_closed") #remove "angry_flames"
     "As the flames return to their normal size, you breathe a quiet sigh of relief."
     $ changeAzula("stern")
-    $ cg("angry", "confused", "eyes_at_player", "blank")
+    $ cg("mouth_open", "confused", "eyes_at_player", "blank")
     a "However, should I need to remind you again, I'm afraid I might need to banish you for ugliness in addition to stupidity."
     $ changeAzula("content")
     $ cg("you_sure", "eyes_to_side", "mouth_open")
@@ -39,45 +39,45 @@ label scene_01:
     "You clench your fist in anger. As a veteran, you've seen your fair share of burn victims. Most of them weren't lucky enough to only suffer a superficial wound. Even if they were your enemies, it's not a fate to make light of. She has no right to speak this way."
     pc "With all your experience on the front lines, naturally you would know."
     #$ changeLee("")
-    $ cg("angry", "eyes_at_player")
+    $ cg("mouth_open", "angry", "eyes_at_player")
     "Azula narrows her eyes at you, unsure if you're insulting her."
     $ changeAzula("annoyed")
     a "It's an obvious fact, [pc_name]."
     $ changeAzula("stern")
-    $ cg("eyes_aimed_up")
+    $ cg("mouth_open", "angry", "eyes_aimed_up")
     a "But enough about weaklings of the past!"
     $ changeAzula("content")
-    $ cg("confused", "eyes_at_player")
+    $ cg("mouth_open", "confused", "eyes_at_player")
     a "I'm feeling a bit parched today."
     $ changeAzula("bemused")
-    $ cg("you_sure")
+    $ cg("mouth_open", "you_sure")
     a "What are you going to do about it?"
     menu:
         "Blowjob":
             pc "I'm going to let you suck my cock."
             #$ changeLee("")
-            $ cg("eyes_to_side")
+            $ cg("mouth_open", "you_sure", "eyes_to_side")
             "Azula rolls her eyes."
             $ changeAzula("disappointed")
             a "Could you be any more blunt?"
             pc "Your last performance was not very inspiring."
             #$ changeLee("")
             $ changeAzula("mad")
-            $ cg("angry", "eyes_at_player")
+            $ cg("mouth_open", "angry", "eyes_at_player")
             a "Are you really blaming your lack of imagination on me!?"
             pc "So many questions. Yet not one is the answer. My cock in your mouth."
             #$ changeLee("")
             $ changeAzula("bemused")
-            $ cg("eyes_to_side")
+            $ cg("mouth_open", "angry", "eyes_to_side")
             a "Hmm..."
             $ changeAzula("content")
-            $ cg("you_sure")
+            $ cg("mouth_open", "you_sure")
             a "Crude, but effective."
             $ changeAzula("excited")
-            $ cg("confused", "eyes_aimed_up")
+            $ cg("mouth_open", "confused", "eyes_aimed_up")
             a "Truly, I am quite thirsty."
             $ changeAzula("stern")
-            $ cg("angry", "eyes_at_player")
+            $ cg("mouth_open", "angry", "eyes_at_player")
             a "Enough of haiku."
             "Azula leaps from her pillow and through the flames, quickly walking past you as she orders you to follow her." #screen cuts to black
             $ black("show")
