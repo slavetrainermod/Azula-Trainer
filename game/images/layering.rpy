@@ -112,6 +112,51 @@ init python: ###Method Definition for controlling transitions and outfits
         renpy.show_screen("cg_screen")
         renpy.with_statement(Dissolve(0.5))
 
+    def cg2( effect_1=None,
+            effect_2=None,
+            effect_3=None,
+            effect_4=None,
+            effect_5=None,
+            effect_6=None,):
+        global cg_image_base
+        global cg_image_1
+        global cg_image_2
+        global cg_image_3
+        global cg_image_4
+        global cg_image_5
+        global cg_image_6
+        global cg_scene
+
+        ###HIDE OLD SCREEN
+        renpy.hide_screen("cg_screen")
+        #renpy.with_statement(Dissolve(0.5))
+        fp = "images/cg/scene_01/"+cg_scene+"/"
+
+        cg_image_base = fp+"base.png"
+
+        if effect_1 != None:
+            cg_image_4 = fp+effect_1+".png"
+        if effect_2 != None:
+            cg_image_5 = fp+effect_2+".png"
+        if effect_3 != None:
+            cg_image_6 = fp+effect_3+".png"
+        if effect_4 != None:
+            cg_image_1 = fp+effect_4+".png"
+        if effect_5 != None:
+            cg_image_2 = fp+effect_5+".png"
+        if effect_6 != None:
+            cg_image_3 = fp+effect_6+".png"
+
+
+
+
+
+
+
+        ###DISPLAY THE UPDATED SCREEEN
+        renpy.show_screen("cg_screen")
+        renpy.with_statement(Dissolve(0.5))
+
     def changeAzula(emotion):
         global azula_sprite_base
         global azula_eye
