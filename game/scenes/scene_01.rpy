@@ -1,4 +1,4 @@
-﻿label intro_scene:
+﻿
     $ background("images/environments/throne.png")
     "Four months have passed since you were assigned the post of personal military liaison to Fire Lord Azula, who has spent three of the last four years isolated in her palace, ruling from afar."
     "You can only imagine how furious she was when the Phoenix King Ozai then demanded that she at least pass orders through a living person, rather than by a messenger hawk."
@@ -12,7 +12,7 @@
 
 
 
-label scene_01:
+#label scene_01:
     $ cg_scene = "FireThrone"
     $ cg("mouth_closed", "angry", "eyes_at_player", "foreground_flames")
     $ changeAzula("neutral")
@@ -566,3 +566,4 @@ label scene_01:
     pause 
     "We hope you enjoyed our demo!"
     "Learn more by visiting our Patreon page at {a=https://patreon.com/mindbreakstudios2}patreon.com/mindbreakstudios2{/a}"
+    

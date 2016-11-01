@@ -28,6 +28,10 @@ screen cg_screen:
     add cg_image_4
     add cg_image_5
     add cg_image_6
+    add cg_image_7
+    add cg_image_8
+    add cg_image_9
+    
 
 
     zorder -1
@@ -72,7 +76,10 @@ init python: ###Method Definition for controlling transitions and outfits
             effect_3=None,
             effect_4=None,
             effect_5=None,
-            effect_6=None,):
+            effect_6=None,
+            effect_7=None,
+            effect_8=None,
+            effect_9=None):
         global cg_image_base
         global cg_image_1
         global cg_image_2
@@ -80,7 +87,12 @@ init python: ###Method Definition for controlling transitions and outfits
         global cg_image_4
         global cg_image_5
         global cg_image_6
+        global cg_image_7
+        global cg_image_8
+        global cg_image_9
         global cg_scene
+    
+    
 
         ###HIDE OLD SCREEN
         renpy.hide_screen("cg_screen")
@@ -101,11 +113,13 @@ init python: ###Method Definition for controlling transitions and outfits
             cg_image_5 = fp+effect_5+".png"
         if effect_6 != None:
             cg_image_6 = fp+effect_6+".png"
-
-
-
-
-
+        if effect_7 != None:
+            cg_image_7 = fp+effect_7+".png"
+        if effect_8 != None:
+            cg_image_8 = fp+effect_8+".png"
+        if effect_9 != None:
+            cg_image_9 = fp+effect_9+".png"
+            
 
 
         ###DISPLAY THE UPDATED SCREEEN
