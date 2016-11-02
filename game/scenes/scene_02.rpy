@@ -1,8 +1,14 @@
 ﻿label intro_scene:
     $ black("show")
-    "blablablabla, shit happens"
+    "Avatar Aang is dead. His friends have been imprisoned. While the Phoenix King Ozai keeps busy bringing stability to the former Earth Kingdom, campaigning against the Northern Water Tribe, and searching for the new Avatar, Fire Lord Azula rules the Fire Nation."
+    "For three years, she remained isolated within her palace, issuing royal decrees by messenger hawk. Despite the effectiveness of her rule, when her father returned to discover she had no personal contact with her generals, he demanded that she at least pass her orders through a military liaison."
+    "At first, her generals welcomed the opportunity to be assured that her orders did not come from some imposter they were powerless to unveil. They were allowed to choose between themselves the most honorable man to serve as the go-between for the Fire Lord and the military."
+    "However, it soon became apparent that the job was a death sentence for one's career, sometimes quite literally. After numerous banishments and the occasional execution, the word 'treason' lost all meaning to her generals, though the liaisons that she dismissed were never secretly forgiven by them."
+    "Now, the role has become a means of political assassination, and you are the most recent victim, a casualty of your own ambition. Despite that, you're resolved to turn the situation to your absolute advantage through any means necessary. Where others see certain doom, you see a clear opportunity."
+    "You will have your revenge."
 
 label scene_02:
+    "A few days later…"
     $ cg_scene = "firethronezoom"
     $ cg("base", "headdefault","d_mclosed", "d_bcocked", "d_eaimedup", "d_armlegl", "d_armlegr","blank", "foreground_flames1")
     $ black("hide")
@@ -159,18 +165,20 @@ label scene_02:
     $ cg(effect_3="d_msmile", effect_4="d_bcocked")
     a "That's a battle I would have enjoyed."
     $ changeAzula("excited")
-    $ cg(effect_3="d_msopen",effect_4="d_bsurprised")
+    $ cg("base_01", "headfoward", "f_mtalking", "f_bsurprised", "f_eplayer", "f_armleg", "blank")
     a "What was it like, to fight powerless waterbenders?"
     pc "Easy."
+    $ cg(effect_3="f_mclosed",effect_4="f_bconfused")
     $ changeAzula("happy")
-    $ cg(effect_3="d_mclosed",effect_4="d_bcocked")
+    $ cg(effect_3="f_mtalking")
     a "I don't suppose they had any real weapons."
     pc "No."
     $ changeAzula("excited")
-    $ cg(effect_3="d_mwopen",effect_4="d_bsurprised")
+    $ cg(effect_3="f_mtalking",effect_4="f_bsurprised")
     a "Is it true that the Avatar transformed into a monster?"
+    $ cg(effect_3="f_mclosed")
     pc "Yes."
-    $ cg(effect_3="d_mclosed",effect_4="d_bangry", effect_5="d_erolling")
+    $ cg("base", "headdefault","d_mclosed", "d_bcocked", "d_eplayer", "d_armlegl", "d_armlegr","blank", "foreground_flames1")
     "Your reluctance to talk about it obviously starts to annoy Azula. She sits up straight, reminding you that this is more than just a casual account of your life."
     $ changeAzula("frustrated")
     $ cg(effect_3="d_msopen")
@@ -352,7 +360,7 @@ label scene_02:
     $ changeAzula("disappointed")
     $ cg(effect_3="d_mclosed", effect_5="d_erolling")
     a "I'm sure you were very heroic."
-    "Defending the city was, by far, the toughest, most brutal combat you've ever experienced. Whoever the White Lotus was, when they made their move, they wiped out dozens of units. If that dismissal came from anyone else, you'd be furious. But coming from the Fire Lord, it's just disturbing."
+    "Defending the city was, by far, the toughest, most brutal combat you've ever experienced. Whoever the White Lotus were, when they made their move, they wiped out dozens of units. If that dismissal came from anyone else, you'd be furious. But coming from the Fire Lord, it's just disturbing."
     pc "Fifty-three percent of my unit was wounded or killed before reinforcements finally arrived. We were pushed all the way back into the Inner Ring."
     $ changeAzula("neutral")
     $ cg(effect_3="d_msopen",effect_4="d_bangry", effect_5="d_eplayer")
@@ -384,7 +392,7 @@ label scene_02:
     $ changeAzula("excited")
     $ cg(effect_3="f_mtalking", effect_4="f_bsurprised")
     a "Also, the first time you used each to kill someone."
-    "You take a deep breath and sigh. She might be a master firebender, but when it comes to arms, she sounds like a rookie. Maybe she's merely excited to talk to someone about it, though."
+    "You take a deep breath and sigh. She might be a master firebender, but when it comes to arms, she sounds like a rookie. Maybe she's simply excited to talk to someone about it, though."
     pc "With respect, my Lord, I could tell you more quickly if you let me answer questions already asked."
     $ cg("base", "headdefault","d_mclosed", "d_bangry", "d_erolling", "d_armlegl", "d_armlegr")
     $ changeAzula("mad")
@@ -405,18 +413,19 @@ label scene_02:
     $ cg(effect_4="f_bsurprised")
     "When you begin to talk about your actual combat experience, she smiles and laughs, taking some sort of sick pleasure in the horrors of war. All recruits start eager to fight, of course, even you. However, you get the sense that Azula is more the kind of person who's eager to kill."
     pc "...and my first time with a halberd was surprising, because it cut right through the man's armor and took off his arm in one swoop."
-    $ cg("base", "headdefault3","d3_mnormal", "d3_bnormal", "d3_eplayer", "d_armlegl", "d_armlegr")
+    $ cg("base", "headdefault4","d4_mfrown", "d4_bcocked", "d4_eplayer", "d_armlegl", "d_armlegr")
     "Slightly confused by your account, Azula cocks her head to the side." #default
     $ changeAzula("bemused")
-    $ cg(effect_3="d3_mtalk")
+    $ cg(effect_3="d4_mtalk")
     a "But surely, you had to expect that, having trained with it."
+    $ cg(effect_3="d4_mfrown")
     pc "The armor we put on the dummies in training was actually more protective than what he had on."
     $ changeAzula("stern")
-    $ cg("base", "headdefault","d_msopen", "d_bangry", "d_eplayer")
+    $ cg(effect_3="d4_mtalk", effect_4="d4_bmad")
     a "Even though it was a replication of Earth Kingdom armor?"
-    $ cg(effect_3="d_mclosed")
+    $ cg(effect_3="d4_mfrown")
     pc "Their equipment varies in quality. I suppose I should have expected that, but-"
-    $ cg(effect_3="d_mwopen", effect_4="d_bcocked")
+    $ cg("base", "headdefault","d_mwopen", "d_bcocked", "d_eplayer")
     $ changeAzula("bemused")
     a "And then what did you do?"
     $ changeAzula("happy")
@@ -440,7 +449,7 @@ label scene_02:
     $ changeAzula("disappointed")
     $ cg("base", "headdefault3","d3_mfrown", "d3_bbored", "d3_eaway")
     a "Not that I'd ever be able to swing and hack with enough force to keep up…"
-    "Unsurprisingly, Azula sounds very disappointed, even a little jealous."
+    "Unsurprisingly, Azula sounds disappointed, even a little jealous."
     menu:
         "Agree":
             pc "I think you could give any man more than he'd bargain for."

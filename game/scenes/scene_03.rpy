@@ -179,10 +179,10 @@
             $ cg(effect_3="d_mclosed")
             "There's no point in changing your answer at this point. You decide to actually tell the truth."
             pc "Absolutely, my Lord. You're the most beautiful woman I've ever laid eyes on."
-            $ cg(effect_3="d_msmile2", effect_4="d_bsurprised")
+            $ cg("base", "headdefault2","d2_mlaugh", "d2_bhappy", "d2_eclosed")  
             "She lets out a short, hollow laugh, as if your answer didn't even matter."
             $ changeAzula("content")
-            $ cg(effect_3="d_msopen", effect_4="d_bcocked")
+            $ cg("base", "headdefault","d_mwopen", "d_bcocked", "d_eplayer")
             a "Well, that doesn't surprise me."
             $ changeAzula("happy")
             $ cg(effect_3="d_msmile")
