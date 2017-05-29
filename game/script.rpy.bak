@@ -1,5 +1,5 @@
 ﻿label start:
-    call start_variables from _call_start_variables
+    call start_variables
     jump intro_scene
     return
 
