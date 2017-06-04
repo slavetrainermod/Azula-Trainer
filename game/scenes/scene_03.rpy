@@ -629,8 +629,8 @@
     $ changeAzula("annoyed")
     $ cg("base", "headdefault3","d3_mnormal", "d3_bnormal", "d3_eaway")
     a "(As if I don't have an entire nation to rule!)"
-    pause 
-    "Thanks for playing, for now."
+    $ black("show")
+    jump scene_04
     
 
 
