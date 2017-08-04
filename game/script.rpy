@@ -28,6 +28,7 @@ label start_variables: ###Define Starting variables
     $ azula_eyebrow = "images/content_eyebrow_1.png"
 
     $ pc_name = "Lee"
+    $ azula_name = "Azula"
 
     return
 

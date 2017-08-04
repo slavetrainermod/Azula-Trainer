@@ -212,7 +212,7 @@ init python: ###Method Definition for controlling transitions and outfits
             azula_eyebrow = ap+"content_eyebrow_1.png"
             azula_mouth = ap+"smiling_mouth.png"
         elif emotion == "surprised":
-            azula_eye = ap+"open_eye_1.png"
+            azula_eye = ap+"default_eye_1.png"
             azula_eyebrow = ap+"excited_eyebrow.png"
             azula_mouth = ap+"talking_mouth_1.png"
         elif emotion == "annoyed":
@@ -223,3 +223,43 @@ init python: ###Method Definition for controlling transitions and outfits
             azula_eye = ap+"partial_eye_1.png"
             azula_eyebrow = ap+"mad_eyebrow.png"
             azula_mouth = ap+"mad_mouth.png"
+        elif emotion == "not_amused_p3":
+            azula_eye = ap+"partial_eye_3.png"
+            azula_eyebrow = ap+"bored_eyebrow.png"
+            azula_mouth = ap+"default_mouth_1.png"
+        elif emotion == "not_amused_p2":
+            azula_eye = ap+"partial_eye_2.png"
+            azula_eyebrow = ap+"bored_eyebrow.png"
+            azula_mouth = ap+"default_mouth_1.png"
+        elif emotion == "not_amused_p1":
+            azula_eye = ap+"partial_eye_1.png"
+            azula_eyebrow = ap+"bored_eyebrow.png"
+            azula_mouth = ap+"default_mouth_1.png"
+        elif emotion == "derp":
+            azula_eye = ap+"open_eye_3"
+            azula_eyebrow = ap+"little_up_little_downbrow.png"
+            azula_mouth = ap+"default_mouth_1.png"
+        elif emotion == "not_amused":
+            azula_eye = ap+"default_eye_1.png"
+            azula_eyebrow = ap+"bored_eyebrow.png"
+            azula_mouth = ap+"default_mouth_1.png"
+        elif emotion == "not_amused_2":
+            azula_eye = ap+"default_eye_2.png"
+            azula_eyebrow = ap+"bored_eyebrow.png"
+            azula_mouth = ap+"default_mouth_1.png"
+        elif emotion == "not_amused_3":
+            azula_eye = ap+"default_eye_3.png"
+            azula_eyebrow = ap+"bored_eyebrow.png"
+            azula_mouth = ap+"default_mouth_1.png"
+        elif emotion == "happy_mad":
+            azula_eye = ap+"partial_eye_1.png"
+            azula_eyebrow = ap+"mad_eyebrow.png"
+            azula_mouth = ap+"smiling_mouth.png"
+        elif emotion == "sad":
+            azula_eye = ap+"default_eye_1.png"
+            azula_eyebrow = ap+"confused_eyebrow.png"
+            azula_mouth = ap+"default_mouth_1.png"
+        elif emotion == "surprised_2":
+            azula_eye = ap+"default_eye_1.png"
+            azula_eyebrow = ap+"excited_eyebrow.png"
+            azula_mouth = ap+"default_mouth_1.png"
