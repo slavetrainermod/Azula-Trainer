@@ -1,4 +1,4 @@
-﻿screen background:
+screen background:
     add back_image
     #text "Money: $ "+str(money) xpos 1050 ypos 5
     #text "Time: "+timeString xpos 800 ypos 5
@@ -263,3 +263,4 @@ init python: ###Method Definition for controlling transitions and outfits
             azula_eye = ap+"default_eye_1.png"
             azula_eyebrow = ap+"excited_eyebrow.png"
             azula_mouth = ap+"default_mouth_1.png"
+        

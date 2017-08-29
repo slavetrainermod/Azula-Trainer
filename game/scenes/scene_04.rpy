@@ -319,7 +319,7 @@ label scene_04:
     $ changeAzula("neutral")
     a "Now, onto the main course."
     $ cg(effect_5="eyeline closing")
-    $ changeAzula("not_amused_p")
+    $ changeAzula("not_amused")
     a "But first...what do you think of my figure?"
     $ cg(effect_3="mouth default")
     menu:
@@ -944,7 +944,7 @@ label scene_04:
             $ black("show")
             "You can still hear her still yelling at you until you pass out of earshot."
             pc "Touchy, touchy…"
-            return
+            jump sauna
         "Gorgeous":
             pc "You're absolutely gorgeous."
             $ changeAzula("happy")
@@ -974,4 +974,4 @@ label scene_04:
             a "But I expect you back here next week for more."
             $ cg(effect_3="mouth default")
             pc "As you wish, Azula."
-            return
+            jump sauna
