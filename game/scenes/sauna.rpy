@@ -39,7 +39,7 @@
     a "Isn't it obvious?"
     $ cg(effect_3="mouth_default")
     pc "Ain't it obvious I'm gonna-!"
-    $ cg("Towel","Headbase_1","mouth_default", "eyebrow_happy","eyes_at_player", "eyeline2")
+    $ cg("Towel","Headbase_1","slight_smile_h1", "eyebrow_happy","eyes_at_player", "eyeline2")
     "You stop short as you realize what you're saying. The Fire Lord smirks at you."
     $ cg(effect_3="mouth_talking")
     $ changeAzula("content")
@@ -93,14 +93,14 @@
     a "Do you recall the first line of today's haiku?"
     $ cg(effect_3="mouth_default")
     pc "Were you waiting long?"
-    $ cg(effect_5="eyedown")
+    $ cg(effect_5="eyedown", effect_3="Smile_h1")
     "Azula smiles at your remembrance. It's like she's actually happy to see you, or at least, your body."
     $ cg(effect_5="eyes_at_player", effect_3="mouth_talking")
     $ changeAzula("happy")
     a "You arrived soon enough."
     $ cg(effect_4="eyebrow_happy")
     a "It {size=+10}is{/size} a rather large palace to search, after all." #emphasis on 'is'
-    $ cg(effect_3="mouth_default")
+    $ cg(effect_3="smile_h1")
     pc "Tell me about it…"
     $ cg(effect_3="mouth_talking", effect_4="eyebrow_angerh1")
     $ changeAzula("mad")
@@ -139,29 +139,54 @@
     $ cg(effect_3="mouth_default")
     pc "Sounds good to me."
     $ cg(effect_6="blank")
-
     "You walk up close to Azula. With only a couple of inches between you and her, it's the closest you've ever been to the Fire Lord thus far. What strikes you most is just how much taller you are than her. For the first time since you met her, you feel empowered."
     pc "Take off that bra."
-    a "I've already done that for you once." #slight emphasis on 'I've'
+    $ cg(effect_3="mouth_talking", effect_4="eyebrow_angerh1", effect_5="eyes_at_player", effect_6="eyeline2")
+    $ changeAzula("annoyed")
+    a "{size=+3}I've{/size} already done that for you once." #slight emphasis on 'I've'
+    $ cg(effect_3="mouth_default")
     pc "Fine, then."
+    $ cg(effect_5="eyedown", effect_4="eyebrow_normalh1", effect_6="blank", effect_7="HandBraPull")
     "Hooking a finger underneath the middle of her bra, you draw Azula slightly closer to you. She exhales loudly, as if she's trying to calm herself."
     pc "You don't mind, do you?"
+    $ cg(effect_6="blush", effect_5="eyes_right", effect_3="mouth_talking", effect_4="eyebrow_angerh1")
+    $ changeAzula("bemused")
     a "Of course not…"
-    "You don't waste any time in removing the only article of clothing between you and her royal breasts. Azula helps you by moving her arms so it's easier to pull off her bra, returning them to her (sides? I forget - tf) once it's gone."
+    $ cg(effect_5="eyedown", effect_4="eyebrow_normalh1", effect_6="blank", effect_7="blank")
+    "You don't waste any time in removing the only article of clothing between you and her royal breasts. Azula helps you by moving her arms so it's easier to pull off her bra, returning them to her once it's gone." #(sides? I forget - tf)
+    $ cg(effect_3="mouth_talking", effect_5="eyes_at_player")
+    $ changeAzula("content")
     a "Thanks."
     a "It was getting a bit soaked."
+    $ cg(effect_3="smile_h1")
     "Suddenly, you remember that you're in a sauna, fully clothed. It's grown mildly uncomfortable since you entered."
     pc "Excuse me for a moment."
     "You turn around to walk out, but Azula grabs your hand to stop you."
+    $ cg(effect_3="mouth_talking")
+    $ changeAzula("surprised_2")
     a "Wait!"
+    $ changeAzula("mad")
+    $ cg(effect_4="eyebrow_angerh1")
     a "Where do you think you're going!?"
+    $ cg(effect_3="mouth_default")
     pc "Just to take off some of these clothes. We are in a sauna, after all."
+    $ cg(effect_4="eyebrow_normalh1", effect_3="mouth_talking")
+    $ changeAzula("bemused")
     a "Oh, right…"
+    $ changeAzula("neutral") 
     a "Well, don't take too long!"
+    $ cg(effect_3="mouth_default")
     "The Fire Lord glowers at you impatiently, but lets go of your hand. You navigate your way around the used trap still hanging in front of the door and step into the hallway, where you quickly undress down to your underwear. When you return, her expression hasn't changed a bit. You decide to try a bit of sarcasm."
     pc "Sorry for the wait."
+    $ cg(effect_3="mouth_talking")
+    $ changeAzula("annoyed")
     a "Unamusing, [pc_name]."
-    a "Highly unamusing." #emphasis on 'highly'
+    $ cg(effect_4="eyebrow_angerh1")
+    $ changeAzula("mad")
+    a "{size=+10}Highly{/size} unamusing." #emphasis on 'highly'
+    $ cg(effect_3="mouth_default")
     pc "Azula, I was gone for less than a minute."
+    $ cg(effect_3="mouth_talking")
     a "Enough talk!"
+    $ cg(effect_4="eyebrow_normalh1", effect_3="mouth_default")
     "To emphasize her point, the Fire Lord shakes her upper body from side to side, slightly swinging her breasts in tandem. Your cock twitches at the sight."
