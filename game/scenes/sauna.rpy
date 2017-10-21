@@ -442,7 +442,7 @@ label sauna:
     $ cg(effect_2="HeadbaseH3",effect_3="Slight_Grin_h3", effect_4="Brow_happy", effect_5="Iris_Down_RightH3", effect_6="EyeLine2_H3", effect_7="blush_h3", effect_8="boob_grab_pull")
     "Remaining silent, Azula looks away, but you can tell that she's flattered. You meant what you said, though it doesn't hurt that it also reinforces your position with her." #head3, happy brow, eyeline2, irisdownright, slightgrin, blush
     $ cg(effect_3="Talking_mouth_h3", effect_6="EyeLinefully_closed_h3", effect_7="blank", effect_8="boob_grab_pushup")
-    "The two of you go on like that for a few more minutes, your stiff cock pressing against her navel as you play with her breasts. She continues to moan and grind against you as you do so, and you can tell she's getting close to being satisfied." #head3
+    "The two of you go on like that for a few more minutes, your stiff cock pressing against her torso as you play with her breasts. She continues to moan and grind against you as you do so, and you can tell she's getting close to being satisfied." #head3
     $ cg(effect_3="mouth_basic_H3", effect_5="Eye_At_PlayerH3", effect_6="EyeLine2_H3", effect_8="boob_grab_pushup")
     pc "I'm going to play with your nipples now, okay?"
     $ cg(effect_2="Headbase_H2", effect_3="mouth_openh2", effect_4="eyebrow_normal", effect_5="Eye_at_player_h2", effect_6="EyeLine2_H2", effect_8="boob_grab_pull")
@@ -490,3 +490,138 @@ label sauna:
     a "That feels so...haa...good...eek!"
     $ cg(effect_3="mouth_default_h2")
     pc "I know it does."
+    
+    $ cg(effect_3="mouth_openh2", effect_4="eyebrow_tense", effect_5="Eye_down_h2", effect_6="blank")
+    a "At this rate I...eek!"
+    $ cg(effect_6="EyeLine2_H2", effect_4="EyeBrow_Normal", effect_5="Eye_Right_h2")
+    a "Might even...haa..."
+    $ cg(effect_3="mouth_default_h2", effect_6="EyeLinefully_closed_h2")
+    "Interrupting her train of thought, you rub your fingers over Azula's nipples, twisting them within your digits. She grinds against you harder, but doesn't spasm like before."
+    $ cg(effect_3="mouth_openh2", effect_4="eyebrow_tense", effect_6="blank")
+    a "{size=+10}Eeeek!{/size}" #emphasis
+    $ cg(effect_3="mouth_default_h2")
+    pc "Might even what?"
+    $ cg(effect_3="mouth_openh2", effect_5="Eye_at_player_h2", effect_6="EyeLine2_H2")
+    a "Give you...haa...a promotion...eek!"
+    $ cg(effect_3="mouth_default_h2")
+    pc "Is that all?"
+    $ cg(effect_3="mouth_openh2", effect_6="EyeLinefully_closed_h2")
+    a "What more do you...eek!"
+    $ cg(effect_6="EyeLine2_H2")
+    a "What more do you...haa...want?"
+    $ cg(effect_3="mouth_default_h2")
+    pc "I want the same thing you want."
+    $ cg(effect_3="mouth_openh2")
+    a "You had...haa...better, boy...eek!"
+    $ cg(effect_3="mouth_default_h2")
+    pc "But more than that, I want you to say it."
+    $ cg(effect_3="mouth_openh2", effect_4="EyeBrowLittle_Up_little_Down", effect_6="blank")
+    a "Haa...why?"
+    $ cg(effect_3="mouth_default_h2")
+    pc "Indulge me."
+    $ cg(effect_3="mouth_openh2", effect_6="EyeLine2_H2")
+    a "Or...haa...what?"
+    $ cg(effect_3="mouth_default_h2")
+    pc "Or else I'll-"
+    $ cg(effect_3="mouth_openh2", effect_4="eyebrow_tense", effect_5="Eye_Right_h2", effect_6="blank")
+    "You stop short as the Fire Lord lets out a particularly high-pitched squeal. You didn't even do anything differently."
+    a "{size=+10}Eeeek!{/size}" #emphasis
+    $ cg(effect_3="mouth_default_h2", effect_4="EyeBrow_Normal", effect_5="Eye_at_player_h2")
+    pc "Or else I'll stop."
+    $ cg("dong_in_legs","HeadBase_1", "Mouth_talking", "EyeBrow_angerh1", "Eyes_At_player", "eyeline2")
+    a "You...haa...better not!"
+    $ cg(effect_3="mouth_default")
+    menu:
+        "Continue":
+            $ cg(effect_9="boob_pinch_blur")
+            "You continue to play with Azula's nipples, only now you speed up your efforts, pinching her right one and pulling it out until you're practically tugging on the Fire Lord's breast." #right blur
+            $ cg(effect_1="dong_in_legs", effect_2="Headbase_H2", effect_3="mouth_openh2", effect_4="eyebrow_tense", effect_5="Eye_down_h2", effect_6="blank",effect_8="boob_pinch_left_noblur")
+            a "{size=+10}Eeek!{/size}" #emphasis
+            "At the same time, you ease up on her left breast, providing her with a striking difference in sensations. It's not entirely rough, but you can tell she's enjoying it all the same."
+            $ cg(effect_4="EyeBrow_Normal", effect_6="EyeLine2_H2")
+            a "Mmm...I like that…"
+            $ cg(effect_3="mouth_default_h2")
+            pc "I bet you do."
+            $ cg(effect_3="mouth_openh2", effect_5="Eye_at_player_h2")
+            a "Don't be...haa...snide, [pc_name]...eek!"
+            a "Just keep...mmm...doing what...haa...you're doing...eek!"
+            $ cg(effect_3="mouth_default_h2")
+            pc "I wouldn't dream otherwise, Azula."
+            "Of course, that's because you're sure she'd burn you alive if you stopped this close to her inevitable orgasm. However, helping her out in this way should serve your goals very well. You might even get something out of it yourself."
+            $ cg(effect_1="dong_in_legs", effect_2="Headbase_H2", effect_3="mouth_openh2", effect_4="eyebrow_tense", effect_5="Eye_down_h2", effect_6="blank",effect_8="boob_pinch_left_blur", effect_9="boob Pull Pinch left") 
+            "Switching it up, you begin to tug on her left nipple while you return to simply teasing her right one. As you do, she slightly jerks to her left, but keeps her composure." #left blur
+            a "{size=+10}Eeek!{/size}" #emphasis
+            $ cg(effect_3="mouth_default_h2")
+            pc "Anyway, you should tell me when you get close."
+            $ cg(effect_5="Eye_at_player_h2", effect_3="mouth_openh2")
+            a "Haa...and why's that?"
+            $ cg(effect_4="EyeBrowLittle_Up_little_Down", effect_6="EyeLine2_H2")
+            a "You want to...mmm...hear me squirm?"
+            a "Is that it!?"
+            $ cg(effect_3="mouth_default_h2")
+            pc "I want to help push you over the edge."
+            $ cg(effect_3="mouth_openh2", effect_4="EyeBrow_Normal")
+            a "Haa...very well...eek!"
+            $ cg(effect_6="EyeLinefully_closed_h2")
+            a "I will let you know...mmm…"
+            $ cg(effect_3="mouth_default_h2", effect_5="Eye_Right_h2")
+            "With any other woman, you'd say you'd have her in the palm of your hand at this point. With Azula, though, you're sure that if she doesn't cum, not only will you be stripped of your position, but you may very well be killed as well. If not today, then maybe tomorrow."
+            "Intending to make this one count, you start to slowly tighten your grip on her right nipple as you rub it between your fingers. At the same time, you tug on her left breast a bit harder, pulling it out by her nipple."
+            $ cg(effect_3="mouth_openh2", effect_5="Eye_Right_h2", effect_6="EyeLine2_H2")
+            a "That's right...haa...I've been a bad girl…"
+            $ cg(effect_2="HeadbaseH3",effect_3="Talking_mouth_h3", effect_4="Brow_Cocky", effect_5="Iris_Down_RightH3", effect_6="EyeLine2_H3")
+            a "If only my dear father...mmm...could see me now…"
+            $ cg(effect_6="EyeLinefully_closed_h3")
+            a "He'd punish me...eek!"
+            $ cg(effect_5="Eye_At_PlayerH3", effect_6="blank")
+            a "Punish me, [pc_name]!"
+            $ cg(effect_4="brow_happy", effect_5="Iris_Down_RightH3", effect_8="boob_pinch_left_blur", effect_9="boob_pinch_blur")
+            "Taking that as your cue that she's at the brink of orgasm, you begin to roughly tug on both her breasts at a regular pace, continually loosening your grip on her nipples whenever you get close to her body, but then pinching them tightly as you pull them towards you." #both blur
+            a "Yes!"
+            $ cg(effect_5="Eye_At_PlayerH3")
+            a "{size=+5}Yes!{/size}" #emphasis
+            $ cg(effect_6="EyeLinefully_closed_h3")
+            a "{size=+10}I'm...eeeek!{/size}" #emphasis on all
+            $ cg(effect_3="mouth_basic_H3")
+            "You can't help but also slide your cock through her thighs as you lay it on, feeling her legs shudder around you as she cums. Azula's body moves along with your pulls, and she constantly presses up against you, grinding against your body in an animalistic display of lust."
+            $ cg(effect_1="dong_in_legs", effect_2="Headbase_H2", effect_3="mouth_openh2", effect_4="EyeBrow_Normal", effect_5="Eye_down_h2", effect_6="EyeLine2_H2", effect_8="boob_pinch_left_noblur", effect_9="boob Pull Pinch left") 
+            a "Haa...yes...just like...mmm…"
+            $ cg(effect_6="EyeLinefully_closed_h2")
+            a "Just like that...eek!"
+            $ cg(effect_3="mouth_default_h2")
+            "After another minute of this, Azula's breathing steadily begins returning to normal, and she stops grinding against you. Whatever she was looking for out of all this, she appears to have found it, although from all the 'daddy' talk, you're not sure what exactly it was."
+            $ cg(effect_2="HeadBase_1", effect_3="slight_smile_h1", effect_4="EyeBrow_happy", effect_5="eyes_at_player", effect_6="blank", effect_8="blank", effect_9="blank")
+            "Still, so long as she's satisfied, you feel safe and secure. She'll certainly want to keep you around after all this. You remove your hands from her breasts, but Azula doesn't complain. In fact, she gives a quick sigh of relief, as if she didn't want to bring it up."
+            a "That was marvelous, [pc_name]."
+            $ cg(effect_3="mouth_talking")
+            a "We'll have to do that again sometime."
+            $ cg(effect_3="mouth_default")
+            pc "And perhaps go even farther."
+            $ cg(effect_3="mouth_talking", effect_4="EyeBrow_angerh1", effect_6="blank")
+            $ cg(effect_3="mouth_default", effect_4="EyeBrow_Normalh1", effect_5="eyes_right")
+            "Suddenly, Azula appears angry and opens her mouth as if to yell at you, but then looks away thoughtfully."
+            $ cg(effect_3="mouth_talking")
+            a "Yes...and perhaps go even farther."
+            $ cg(effect_5="eyes_at_player")
+            a "But as for today, I'm done with you, boy."
+            a "You may leave."
+            $ cg(effect_3="mouth_default")
+            pc "So, about that promotion."
+            $ cg(effect_3="mouth_talking", effect_6="eyeline2")
+            a "{size=+10}I said{/size}, you may leave!" #emphasis on 'said'
+            $ cg(effect_3="mouth_default")
+            "You want to argue with her, but decide to save that for next time, after she's had more time to digest the amount of pleasure you're able to bring to her life."
+            pc "See you soon, Azula."
+            $ cg(effect_3="mouth_talking", effect_6="blank")
+            a "Goodbye, [pc_name]."
+            $ black("show")
+            "With that, you quickly get yourself dressed again and leave the sauna, being sure not to cut yourself on the blade still hanging in front of the doorway. As you leave, you hear Azula begin to laugh behind you, though you're not sure at what. That girl is crazy."
+        "Stop":
+            $ black("show")
+            "You stop playing with Azula's nipples and put some space in between you and her. She immediately brings her hands out from behind her back. Blue flames erupt from her palms, and you don't even have a chance to scream before she incinerates you on the spot."
+            a "Insolent fool!"
+            "The Fire Lord lightly kicks your corpse to see if you're still alive. You're not."
+            a "Perhaps I was a bit...hasty."
+            a "Oh well."
+            a "Plenty of fish in the sea."
+            "GAME OVER"
