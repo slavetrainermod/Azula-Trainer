@@ -1,4 +1,5 @@
 label scene_04:
+    $ black("show")
     "Several weeks have gone by since Azula first started asking personal questions. Her attraction to you became increasingly apparent, and it wasn't long before she demanded that you act as if you were courting her. According to her, she wants to be prepared for when she has to marry, but you can almost believe that she likes you."
     "Almost."
     "Even though she's ordered you to call her 'Azula' instead of 'Fire Lord', you still have to be careful about what you say. There's no question that she still expects to be treated as royalty. You can live with that. In fact, it may be the only way you stay alive."
@@ -974,4 +975,4 @@ label scene_04:
             a "But I expect you back here next week for more."
             $ cg(effect_3="mouth default")
             pc "As you wish, Azula."
-            jump sauna
+            jump eventmenu

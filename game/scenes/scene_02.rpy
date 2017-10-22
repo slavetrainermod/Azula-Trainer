@@ -6,8 +6,10 @@
     "However, it soon became apparent that the job was a death sentence for one's career, sometimes quite literally. After numerous banishments and the occasional execution, the word 'treason' lost all meaning to her generals, though the liaisons that she dismissed were never secretly forgiven by them."
     "Now, the role has become a means of political assassination, and you are the most recent victim, a casualty of your own ambition. Despite that, you're resolved to turn the situation to your absolute advantage through any means necessary. Where others see certain doom, you see a clear opportunity."
     "You will have your revenge."
+    jump eventmenu
 
 label scene_02:
+    $ black("show")
     "A few days later…"
     $ cg_scene = "firethronezoom"
     $ cg("base", "headdefault","d_mclosed", "d_bcocked", "d_eaimedup", "d_armlegl", "d_armlegr","blank", "foreground_flames1")
@@ -522,7 +524,8 @@ label scene_02:
     a "I look forward to hearing more war stories the next time we see each other, [pc_name]."
     pc "(Oh good, let me just continually relive the horrors of war for your entertainment, you cunt.)"
     $ black("show")
-    jump scene_03
+    jump eventmenu
+    #jump scene_03 Temporary out for the scene planning
 
 
 

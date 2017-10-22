@@ -263,4 +263,11 @@ init python: ###Method Definition for controlling transitions and outfits
             azula_eye = ap+"default_eye_1.png"
             azula_eyebrow = ap+"excited_eyebrow.png"
             azula_mouth = ap+"default_mouth_1.png"
-        
+        elif emotion == "coming":
+            azula_eye = ap+"default_eye_4.png"
+            azula_eyebrow = ap+"content_eyebrow_1.png"
+            azula_mouth = ap+"mad_mouth.png"
+        elif emotion == "coming2":
+            azula_eye = ap+"default_eye_5.png"
+            azula_eyebrow = ap+"content_eyebrow_1.png"
+            azula_mouth = ap+"mouth-open.png"

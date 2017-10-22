@@ -1,4 +1,5 @@
 ﻿label scene_03:
+    $ black("show")
     $ cg_scene = "firethronezoom"
     $ cg("base", "headdefault","d_mclosed", "d_bcocked", "d_eaimedup", "d_armlegl", "d_armlegr", "foreground_flames1", "blank")
     $ black("hide")
@@ -630,7 +631,7 @@
     $ cg("base", "headdefault3","d3_mnormal", "d3_bnormal", "d3_eaway")
     a "(As if I don't have an entire nation to rule!)"
     $ black("show")
-    jump scene_04
+    jump eventmenu
     
 
 
